@@ -76,13 +76,13 @@
 }
 
 .bluecircle {
-    background: blue;
+    background: rgb(36, 36, 193);
     top: -9rem;
     left: 11rem;
 }
 
 .yellowcircle {
-    background: yellow;
+    background: rgb(205, 205, 31);
     top: -27rem;
     left: 11rem;
 }

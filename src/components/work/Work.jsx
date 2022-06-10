@@ -14,7 +14,7 @@ const Work = () => {
                 <span>Work for All These</span>
                 <span>BRANDS & CLIENTS</span>
                 <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit quos a corporis? Architecto, dolorum molestiae!</span>
-                <button className='button s-button'>Download CV</button>
+                <button className='button s-button'>Get in touch</button>
             </div>
             <div className="w-right">
                 <div className="w-maincircle">
