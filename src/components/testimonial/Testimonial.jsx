@@ -29,7 +29,7 @@ const Testimonial = () => {
         },
     ]
     return (
-        <div className="t-wrapper">
+        <div className="t-wrapper" id='Testomonials'>
             <div className="t-header">
                 <span>Clients always get~~</span>
                 <span>Exceptional work</span>

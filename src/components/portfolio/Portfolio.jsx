@@ -8,7 +8,7 @@ import Sidebar from '../../img/sidebar.png'
 
 const Portfolio = () => {
     return (
-        <div className="portfolio">
+        <div className="portfolio" id='Portfolio'>
             <span>Project</span>
             <span>Portfolio</span>
             <Swiper

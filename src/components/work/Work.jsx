@@ -5,6 +5,7 @@ import fiver from '../../img/fiverr.png'
 import amazon from '../../img/amazon.png'
 import upwork from '../../img/Upwork.png'
 import facebook from '../../img/Facebook.png'
+import { motion } from 'framer-motion'
 
 const Work = () => {
     return (
@@ -17,7 +18,14 @@ const Work = () => {
                 <button className='button s-button'>Get in touch</button>
             </div>
             <div className="w-right">
-                <div className="w-maincircle">
+                <motion.div
+                    initial={{ rotate: 100 }}
+                    whileInView={{ rotate: 0 }}
+                    transition={{ duration: 4, type: 'spring' }}
+                    viewport={{ margin: '-40px' }}
+
+
+                    className="w-maincircle">
                     <div className="w-seccircle">
                         <img src={fiver} alt="" />
                     </div>
@@ -33,7 +41,7 @@ const Work = () => {
                     <div className="w-seccircle">
                         <img src={facebook} alt="" />
                     </div>
-                </div>
+                </motion.div>
                 <div className="w-backcircle bluecircle"></div>
                 <div className="w-backcircle yellowcircle"></div>
 

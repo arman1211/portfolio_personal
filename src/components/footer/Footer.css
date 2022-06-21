@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .f-content {
-        transform: scale(.5);
+    .footer>img {
+        height: 340px;
     }
 }

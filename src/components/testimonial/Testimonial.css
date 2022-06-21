@@ -57,3 +57,17 @@
     align-items: center;
     justify-content: center;
 }
+
+
+@media screen and (max-width:480px) {
+    .t-wrapper {
+        padding: 2px;
+    }
+
+    .testimonials>img {
+        height: 70px;
+        width: 70px;
+    }
+
+
+}

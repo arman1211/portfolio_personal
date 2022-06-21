@@ -86,3 +86,15 @@
     top: -27rem;
     left: 11rem;
 }
+
+@media screen and (max-width:480px) {
+    .work {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .w-right {
+        left: -25%;
+        top: 10%;
+    }
+}

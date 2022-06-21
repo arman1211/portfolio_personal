@@ -8,9 +8,15 @@ import Vector2 from '../../img/Vector2.png'
 import boy from '../../img/boy.png'
 import crown from '../../img/crown.png'
 import thumb from '../../img/thumbup.png'
+import { motion } from 'framer-motion'
 import FloatingDiv from '../floatingdiv/FloatingDiv'
 
 const Intro = () => {
+    const transition = {
+        duration: 2,
+        type: 'spring'
+
+    }
     return (
         <div className="intro">
             <div className="i-left">
@@ -28,12 +34,22 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy} alt="" />
-                <div style={{ left: '65%' }}>
+                <motion.div
+                    style={{ left: '65%' }}
+                    initial={{ left: '0%' }}
+                    whileInView={{ left: '-10%' }}
+                    transition={transition}
+                >
                     <FloatingDiv image={crown} txt1='Web' txt2=' Developer' />
-                </div>
-                <div style={{ left: '-9%', top: '16rem' }}>
+                </motion.div>
+                <motion.div
+                    initial={{ left: '0%' }}
+                    whileInView={{ left: '70%' }}
+                    transition={transition}
+
+                    style={{ left: '-9%', top: '16rem' }}>
                     <FloatingDiv image={thumb} txt1='Best Design' txt2=' Award' />
-                </div>
+                </motion.div>
                 <div className='blurbg' style={{ background: 'rgb{238 210 255}' }}></div>
             </div>
         </div>
